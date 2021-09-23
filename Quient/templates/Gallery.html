@@ -1,0 +1,275 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Gallery |{% endblock title %}
+{% block body %}
+
+<section>
+      <!-- ====================================       gallery header       ==================================== -->
+<div class="head_text">
+    <div class="inner">
+        <div class="animate seven">
+            <span>G</span><span>A</span><span>L</span><span>L</span><span>E</span><span>R</span><span>Y</span>
+        </div>
+        <div class="border"></div>
+    </div>
+</div>
+<div class="container-flud">
+    <div class="text-center">
+        <!-- ====================================       Select all or select a catogory       ==================================== -->
+        <button class="filter-button" data-filter="all">All</button>
+        <button class="filter-button" data-filter="category1">Training</button>            <!-- category1 -->
+        <button class="filter-button" data-filter="category2">Skill Development</button>   <!-- category2 -->
+        <button class="filter-button" data-filter="category3">Placement Training</button>           <!-- category3 -->
+    </div>
+    <div class="row mx-1">
+        <div class="gallery_product  col-sm-3 col-xs-6 filter category1">     <!-- category1 -->
+            <a class="fancybox" data-fancybox="gallery" href="/static/images/img1-training.png">
+                <img class="img-responsive" alt="pic" src="/static/images/img1-training.png" />
+                <div class='img-info'>
+                    <h4>Image 1</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="gallery_product col-sm-3 col-xs-6 filter category2">      <!-- category2 -->
+            <a class="fancybox" data-fancybox="gallery" href="https://source.unsplash.com/400x250/?law">
+                <img class="img-responsive" alt="pic" src="https://source.unsplash.com/400x250/?law" id="imglong" />
+                <div class='img-info'>
+                    <h4>Image 2</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="gallery_product  col-sm-3 col-xs-6 filter category3">     <!-- category3 -->
+            <a class="fancybox" data-fancybox="gallery" href="https://source.unsplash.com/400x250/?college">
+                <img class="img-responsive" alt="pic" src="https://source.unsplash.com/400x250/?college" />
+                <div class='img-info'>
+                    <h4>Image 3</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="gallery_product  col-sm-3 col-xs-6 filter category1">     <!-- category1 -->
+            <a class="fancybox" data-fancybox="gallery" href="/static/images/img1-training.png">
+                <img class="img-responsive" alt="pic" src="/static/images/img1-training.png" id="imglong" />
+                <div class='img-info'>
+                    <h4>Image 4</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="gallery_product col-sm-3 col-xs-6 filter category2">      <!-- category2 -->
+            <a class="fancybox" data-fancybox="gallery" href="https://source.unsplash.com/400x250/?skills">
+                <img class="img-responsive" alt="pic" src="https://source.unsplash.com/400x250/?skills" id="imglong" />
+                <div class='img-info'>
+                    <h4>Image 5</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="gallery_product  col-sm-3 col-xs-6 filter category3">     <!-- category3 -->
+            <a class="fancybox" data-fancybox="gallery" href="https://source.unsplash.com/400x250/?education">
+                <img class="img-responsive" alt="pic" src="https://source.unsplash.com/400x250/?education" />
+                <div class='img-info'>
+                    <h4>Image 6</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="gallery_product  col-sm-3 col-xs-6 filter category1">     <!-- category1 -->
+            <a class="fancybox" data-fancybox="gallery" href="/static/images/img1-training.png">
+                <img class="img-responsive" alt="pic" src="/static/images/img1-training.png" id="imglong" />
+                <div class='img-info'>
+                    <h4>Image 7</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="gallery_product col-sm-3 col-xs-6 filter category2">      <!-- category2 -->
+            <a class="fancybox" data-fancybox="gallery" href="https://source.unsplash.com/400x250/?placement">
+                <img class="img-responsive" alt="pic" src="https://source.unsplash.com/400x250/?placement" />
+                <div class='img-info'>
+                    <h4>Image 8</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="gallery_product  col-sm-3 col-xs-6 filter category3">     <!-- category3 -->
+            <a class="fancybox" data-fancybox="gallery" href="https://source.unsplash.com/400x250/?education">
+                <img class="img-responsive" alt="pic" src="https://source.unsplash.com/400x250/?education" />
+                <div class='img-info'>
+                    <h4>Image 9</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="gallery_product col-sm-3 col-xs-6 filter category2">      <!-- category2 -->
+            <a class="fancybox" data-fancybox="gallery" href="https://source.unsplash.com/400x250/?education">
+                <img class="img-responsive" alt="pic" src="https://source.unsplash.com/400x250/?education" id="imglong" />
+                <div class='img-info'>
+                    <h4>Image 10</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="gallery_product col-sm-3 col-xs-6 filter category2">      <!-- category2 -->
+            <a class="fancybox" data-fancybox="gallery" href="https://source.unsplash.com/400x250/?placement">
+                <img class="img-responsive" alt="pic" src="https://source.unsplash.com/400x250/?placement" />
+                <div class='img-info'>
+                    <h4>Image 11</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="gallery_product  col-sm-3 col-xs-6 filter category1">     <!-- category1 -->
+            <a class="fancybox" data-fancybox="gallery" href="https://source.unsplash.com/400x250/?education">
+                <img class="img-responsive" alt="pic" src="https://source.unsplash.com/400x250/?education" id="imglong" />
+                <div class='img-info'>
+                    <h4>Image 12</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="gallery_product col-sm-3 col-xs-6 filter category2">      <!-- category2 -->
+            <a class="fancybox" data-fancybox="gallery" href="https://source.unsplash.com/400x250/?college">
+                <img class="img-responsive" alt="pic" src="https://source.unsplash.com/400x250/?college" />
+                <div class='img-info'>
+                    <h4>Image 13</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="gallery_product  col-sm-3 col-xs-6 filter category3">     <!-- category3 -->
+            <a class="fancybox" data-fancybox="gallery" href="https://source.unsplash.com/400x250/?education">
+                <img class="img-responsive" alt="pic" src="https://source.unsplash.com/400x250/??education" id="imglong" />
+                <div class='img-info'>
+                    <h4>Image 14</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="gallery_product  col-sm-3 col-xs-6 filter category1">     <!-- category1 -->
+            <a class="fancybox" data-fancybox="gallery" href="https://source.unsplash.com/400x250/?skills">
+                <img class="img-responsive" alt="pic" src="https://source.unsplash.com/400x250/?skills" />
+                <div class='img-info'>
+                    <h4>Image 15</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="gallery_product col-sm-3 col-xs-6 filter category2">      <!-- category2 -->
+            <a class="fancybox" data-fancybox="gallery" href="https://source.unsplash.com/400x250/?skills">
+                <img class="img-responsive" alt="pic" src="https://source.unsplash.com/400x250/?skills" id="imglong" />
+                <div class='img-info'>
+                    <h4>Image 16</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="gallery_product  col-sm-3 col-xs-6 filter category3">     <!-- category3 -->
+            <a class="fancybox" data-fancybox="gallery" href="https://source.unsplash.com/400x250/?placement">
+                <img class="img-responsive" alt="pic" src="https://source.unsplash.com/400x250/?placement" id="imglong" />
+                <div class='img-info'>
+                    <h4>Image 17</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </a>
+        </div>
+        <div class="gallery_product  col-sm-3 col-xs-6 filter category1">     <!-- category1 -->
+            <a class="fancybox" data-fancybox="gallery" href="https://source.unsplash.com/400x250/?skills">
+                <img class="img-responsive" alt="pic" src="https://source.unsplash.com/400x250/?skills" />
+                <div class='img-info'>
+                    <h4>Image 18</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="gallery_product  col-sm-3 col-xs-6 filter category1">     <!-- category1 -->
+            <a class="fancybox" data-fancybox="gallery" href="https://source.unsplash.com/400x250/?skills">
+                <img class="img-responsive" alt="pic" src="https://source.unsplash.com/400x250/?skills" id="imglong" />
+                <div class='img-info'>
+                    <h4>Image 19</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="gallery_product col-sm-3 col-xs-6 filter category2">      <!-- category2 -->
+            <a class="fancybox" data-fancybox="gallery" href="https://source.unsplash.com/400x250/?college">
+                <img class="img-responsive" alt="pic" src="https://source.unsplash.com/400x250/?college" />
+                <div class='img-info'>
+                    <h4>Image 20</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="gallery_product  col-sm-3 col-xs-6 filter category3">     <!-- category3 -->
+            <a class="fancybox" data-fancybox="gallery" href="https://source.unsplash.com/400x250/?skills">
+                <img class="img-responsive" alt="pic" src="https://source.unsplash.com/400x250/?skills" />
+                <div class='img-info'>
+                    <h4>Image 21</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </a>
+        </div>
+        <div class="gallery_product  col-sm-3 col-xs-6 filter category3">     <!-- category3 -->
+            <a class="fancybox" data-fancybox="gallery" href="https://source.unsplash.com/400x250/?placement">
+                <img class="img-responsive" alt="pic" src="https://source.unsplash.com/400x250/?placement" id="imglong" />
+                <div class='img-info'>
+                    <h4>Image 22</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="gallery_product  col-sm-3 col-xs-6 filter category1">     <!-- category1 -->
+            <a class="fancybox" data-fancybox="gallery" href="https://source.unsplash.com/400x250/?training">
+                <img class="img-responsive" alt="pic" src="https://source.unsplash.com/400x250/?training" />
+                <div class='img-info'>
+                    <h4>Image 23</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="gallery_product  col-sm-3 col-xs-6 filter category3">     <!-- category3 -->
+            <a class="fancybox" data-fancybox="gallery" href="https://source.unsplash.com/400x250/?placement">
+                <img class="img-responsive" alt="pic" src="https://source.unsplash.com/400x250/?placement" id="imglong" />
+                <div class='img-info'>
+                    <h4>Image 24</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="gallery_product  col-sm-3 col-xs-6 filter category2">     <!-- category1 -->
+            <a class="fancybox" data-fancybox="gallery" href="https://source.unsplash.com/400x250/?training">
+                <img class="img-responsive" alt="pic" src="https://source.unsplash.com/400x250/?training" id="imglong" />
+                <div class='img-info'>
+                    <h4>Image 25</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+</section>
+{% endblock body %}

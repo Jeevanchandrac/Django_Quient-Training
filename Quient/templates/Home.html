@@ -1,0 +1,177 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+<section>
+	<!-- ====================================        Langing page img slider        ==================================== -->
+	<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+		<div class="carousel-indicators">
+			<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+				aria-current="true" aria-label="Slide 1"></button>
+			<button ty pe="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+				aria-label="Slide 2"></button>
+			<!-- <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+				aria-label="Slide 3"></button> -->
+		</div>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="https://source.unsplash.com/1200x500/?education" class="d-block w-100" alt="pic">
+				<div class="container" id="carousel">
+					<h5>Do What you love with <span class="fw-bold">Passion</span></h5>
+					<p class="text-capitalize fs-5">Our Training and Activities will build your skills which helps
+						to get your Dream job </p>
+					<p><a href="#vision">More Info</a></p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img src="https://source.unsplash.com/1200x500/?college" class="d-block w-100" alt="pic">
+				<div class="container" id="carousel">
+					<h5>Training</h5>
+					<p class="text-capitalize fs-5">1000+ students trained across 110+ colleges with Driven passion
+						and Reality</p>
+					<p><a href="/Testimonials">More Info</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ====================================        Langing page header       ==================================== -->
+	<div class="main text-center m-0 p-0">
+		<div class="head_text1">
+			<div class="inner">
+				<div class="animate seven">
+					<span class="text-center">WELCOME TO QUIENT TRAININGS</span>
+				</div>
+				<div class="border"></div>
+			</div>
+		</div>
+	</div>
+
+	<!-- ====================================        Langing page Details of company       ==================================== -->
+	<div class="objective">
+		<div class="container">
+			<hr class="featurette-divider">
+			<div class="row featurette">
+				<div class="col-md-7">
+					<h2 class="featurette-heading fw-bolder">OVERVIEW</h2>
+					<p class="lead lh-sm">Quient training is an enthusiastic group intended to train
+						students in colleges that are denied the privilege of Placement
+						training, A group of Enthusiasts now have a vision of training
+						students that don’t have access to placement training that can
+						help them get placed, and thereby build their future.
+					</p>
+				</div>
+				<div class="col-md-5">
+					<img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+						width="500px" height="500px" src="{% static 'images/LOGO.png' %}" alt="pic">
+					<title>Placeholder</title>
+					<rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa"
+						dy=".3em"></text></img>
+				</div>
+			</div>
+			<hr class="featurette-divider">
+
+			<div class="row">
+				<div class="col-md-7 order-md-2">
+					<h2 class="featurette-heading fw-bolder"> Placement training</h2>
+					<p class="lead lh-sm">Placement training plays a major role in shaping up the career goals of
+						students. It is
+						the dream of every engineering student to get placed in a top organization visiting
+						their campus for recruitment. Keeping this key aspect into consideration, it is realized
+						that training is important for engineering students to enhance their employability skills
+						and achieve good placement in various Industries
+						At present, the competition for employment is increasing every day and placement has
+						become a challenging task. Training students and equipping them with life skills has
+						become an important responsibility of the institution. Along with technical expertise,
+						the development of a holistic personality is also necessary</p>
+				</div>
+				<div class="col-md-5 order-md-1">
+					<img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+						height="500" src="https://source.unsplash.com/500x500/?education" alt="pic">
+					<title>Placeholder</title>
+					<rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa"
+						dy=".3em"></text></img>
+
+				</div>
+			</div>
+
+			<hr class="featurette-divider">
+
+			<div class="row featurette" id="vision">
+				<div class="col-md-7">
+					<h2 class="featurette-heading fw-bolder">Our Vision</h2>
+					<p class="lead lh-sm">● To look for 100% employment for all students.<br />
+						● To recognize the core competencies of the students.<br />
+						● To train the students to meet the expectations of the industry through our Career
+						Development Programmes.<br />
+						● To build confidence in students and develop the right attitude in them and<br />
+						● enhance their communication skills.<br />
+					</p>
+				</div>
+				<div class="col-md-5">
+					<img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+						height="500" src="https://source.unsplash.com/500x500/?education" alt="pic">
+					<title>Placeholder</title>
+					<rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa"
+						dy=".3em"></text></img>
+				</div>
+			</div>
+
+			<hr class="featurette-divider">
+		</div>
+	</div>
+	<!-- ====================================        Langing page provide details      ==================================== -->
+	<div class="provide">
+		<div class="sec-title text-center mb50 my-4">
+			<h2>We <span class="fw-bold text-primary">Provide</span> Best Training </h2>
+		</div>
+		<div class="row text-center mb50" id="card">
+			<div id="testimonial-slider" class="owl-carousel">
+				<div class="col">
+					<div class="card ">
+						<div class="card-body">
+							<h5 class="card-title fw-bold">Career</h5>
+							<hr class="featurette-divider">
+							<p>We create awareness about <q>career planning</q> and <q>career mapping</q>  among the students</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title fw-bold">Aptitude</h5>
+							<hr class="featurette-divider">
+							<p class="card-text">Organize Various Training Programmes to train the students in the areas
+								of
+								Quantitative Aptitude,Logical Reasoning and Verbal reasoning through
+								the reputed external training organizations and in-house trainers</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title fw-bold">Interviews</h5>
+							<hr class="featurette-divider">
+							<p class="card-text">Train the students through Mock Interviews to perform well in the
+								professional
+								interviews as per the expectations of the corporate world.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title fw-bold">Skills</h5>
+							<hr class="featurette-divider">
+							<p class="card-text">Train the students on “Personality development".Train the students on
+								group
+								discussion techniques
+								Equip the student with life skills.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock body %}

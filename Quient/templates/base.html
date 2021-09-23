@@ -1,0 +1,181 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- ====================================        Required meta tags        ==================================== -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+  <!-- ====================================        Bootstrap stylesheet      ==================================== -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="icon" href="/static/images/LOGO.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- ====================================       Owl stylesheet       ==================================== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.transitions.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+  <!-- ====================================       Custom stylesheet       ==================================== -->
+  <link rel="stylesheet" href="{% static 'css/style-1.css' %}" />
+  <link rel="stylesheet" href="{% static 'css/style-2.css' %}" />
+  <link rel="stylesheet" href="{% static 'css/style-3.css' %}" />
+
+  <!-- ====================================       Title       ==================================== -->
+  <title>{% block title %}{% endblock title %} Quient</title>
+</head>
+
+<body>
+
+  <!-- ====================================        Fixed Navigation        ==================================== -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="/">Quient</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="step" href="/about">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/Testimonials"> Testimonials </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/Gallery">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="/contact">Contact us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ====================================        Messages       ==================================== -->
+  {% if messages %}
+  {% for message in messages %}
+  <div class="container-fluid mb-0" style="margin-top:4rem!important"></div>
+  <div class="alert alert-warning alert-dismissible fade show my-0" role="alert">
+    <strong>{{message}}</strong>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+    </button>
+  </div>
+  </div>
+  {% endfor %}
+  {% endif %}
+
+  <!-- ====================================       Body extends       ==================================== -->
+
+  {% block body %}
+  
+
+  {% endblock body %}
+
+  <!-- ====================================       Body extends ends       ==================================== -->
+
+  <!-- ====================================        JS Plugin      ==================================== -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      $(document).scroll(function () {
+        var $nav = $("#navbar");
+        $nav.toggleClass('scrolled', $(this).scrollTop() > 150);
+      });
+    });
+  </script>
+  <!-- ====================================        External js         ==================================== -->
+  <script type="text/javascript" src="{% static 'js/index.js' %}"></script>
+
+  <!-- ====================================        Whatsapp        ==================================== -->
+  <a href="https://wa.me/country_code_and_your_phone_number" class="whatsapp_float" target="_blank"
+    data-bs-toggle="tooltip" data-bs-placement="left" title="Chat With Us"> <i class="fa fa-whatsapp"
+      aria-hidden="true"></i></i></a>
+
+  <!-- ====================================        Fixed Footer        ==================================== -->
+  <footer id="myFooter">
+    <div class="container-fluid pb-0 mb-0 justify-content-center text-light my-6" id="footer">
+      <div class="row my-3 justify-content-center py-4">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-6 ">
+                <div class="logo-part">
+                  <img src="{% static 'images/LOGO.png' %}" class="logo-footer p">
+                  <p class="mx-1">Quient training is an enthusiastic group intended to train
+                    students in colleges </p>
+                </div>
+              </div>
+              <div class="col-md-6 px-4">
+                <h3> About Company</h3>
+                <p></p>
+                <a href="/about" class="btn-footer" class="moreinfo"> More Info </a><br>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-6">
+                <h3>Contact us</h3>
+                <div class="row ">
+                  <div class="col-md-6">
+                    <div><span class="fa fa-map-marker footer-contacts-icon"> </span>
+                      <p><span class="new-line-span">21 central Street, Bangalore, India</p>
+                    </div>
+                    <div><i class="fa fa-phone footer-contacts-icon"></i>
+                      <p class="footer-center-info email text-left"> +91 9485045958</p>
+                    </div>
+                    <div><i class="fa fa-envelope footer-contacts-icon"></i>
+                      <p> <a href="#" aria-hidden="true">www.yourdomain.com</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 ">
+                <h3>Connect with us</h3>
+                <div class="social">
+                  <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 my-6">
+              <div class="copyright-menu">
+                <ul>
+                  <li>
+                    <p>&copy;2021, All Right Reserved</p>
+                  </li>
+                  <li> <a href="#"> Terms</a> </li>
+                  <li> <a href="#"> Policy</a> </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
