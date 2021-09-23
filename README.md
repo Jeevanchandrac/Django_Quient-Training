@@ -1,2 +1,2 @@
-# Django_Quient Training
+# Django_Quient_Training
  
