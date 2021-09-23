@@ -29,3 +29,8 @@ Above instructions are only to know project envirnoment used
 Getting Started With Admin 
 create a superuser
 $ python manage.py createsuperuser
+
+1. Created a Contact model for contact form
+2. Created a Viewdb.py  to handle all contact form
+3. Gave a search option to search the name, email, phone
+4. HTML starts from base.html
